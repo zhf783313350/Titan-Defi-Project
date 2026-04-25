@@ -1,9 +1,15 @@
 {
+    "solidity.packageDefaultDependenciesDirectory": "lib",
+    "solidity.packageDefaultDependenciesContractsDirectory": "src",
+    "solidity.remappings": [
+        "src/=src/",
+        "script/=script/",
+        "test/=test/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@chainlink/contracts/=lib/chainlink/contracts/",
+        "forge-std/=lib/forge-std/src/"
+    ],
     "go.toolsManagement.checkForUpdates": "proxy",
-    "go.useLanguageServer": true,
-    "gopls": {
-        "build.directoryFilters": [
-            "-lib"
-        ]
-    }
+    "go.useLanguageServer": true
 }

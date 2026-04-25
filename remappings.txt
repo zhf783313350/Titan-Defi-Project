@@ -2,3 +2,6 @@
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
 @chainlink/contracts/=lib/chainlink/contracts/
 forge-std/=lib/forge-std/src/
+src/=src/
+script/=script/
+test/=test/

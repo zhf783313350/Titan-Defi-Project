@@ -5,9 +5,9 @@ pragma solidity ^0.8.19;
 import {Script} from "forge-std/Script.sol";
 import {console} from "forge-std/console.sol";
 // 引入我们的合约
-import {AuctionMarket} from "../src/AuctionMarket.sol";
-import {TitanNFT} from "../src/TitanNFT.sol";
-import {MockPriceFeed} from "../src/mocks/MockPriceFeed.sol";
+import {AuctionMarket} from "src/AuctionMarket.sol";
+import {TitanNFT} from "src/TitanNFT.sol";
+import {MockPriceFeed} from "src/mocks/MockPriceFeed.sol";
 // 引入 UUPS 代理合约
 import {ERC1967Proxy} from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
