@@ -14,10 +14,9 @@ import {ERC1967Proxy} from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.s
 contract DeployScript is Script {
     function run() external {
         // 1. 从环境变量或命令行读取私钥 (这里先硬编码 Anvil 的第一个私钥用于测试)
-        uint256 deployerPrivateKey = 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80;
-
-        // 2. 开启广播模式，之后的交易会发送到链上
+        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
+        // 2. 开启广播模式，之后的交易会发送到链上
 
         // --- 开始部署 ---
 
