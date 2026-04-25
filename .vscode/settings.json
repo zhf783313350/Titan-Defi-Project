@@ -1,0 +1,9 @@
+{
+    "go.toolsManagement.checkForUpdates": "proxy",
+    "go.useLanguageServer": true,
+    "gopls": {
+        "build.directoryFilters": [
+            "-lib"
+        ]
+    }
+}
