@@ -27,7 +27,7 @@ func main(){
 		log.Fatalf("连接区块链节点失败: %v", err)
 	}
 	fmt.Println("成功连接到区块链节点")
-	contractAddress := common.HexToAddress("0xa599EDfB3365Cb7cA96825241Ca9696c310800F7")
+	contractAddress := common.HexToAddress("0xA9745b592860d5AfD00A1C612eC25Ef41506fFE1")
 	market, err := bindings.NewAuctionMarket(contractAddress, client)
 	if err != nil {
 		log.Fatalf("实例化合约绑定失败: %v", err)

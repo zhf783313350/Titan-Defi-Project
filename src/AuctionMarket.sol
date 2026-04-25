@@ -75,7 +75,7 @@ contract AuctionMarket is
         require(block.timestamp < auction.endTime, "Auction expired");
         require(msg.value > auction.highestBidAmount, "Bid more than current highest");
 
-int256 ethPrice = getLatestPrice();
+        int256 ethPrice = getLatestPrice();
         // 确保价格为正数，保证下方的 uint256 强制类型转换是安全的
         require(ethPrice > 0, "Invalid oracle price");
 
